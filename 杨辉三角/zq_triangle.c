@@ -167,10 +167,7 @@ void get_n(const int m)
 
 int main()
 {
-    // get_n(1000);
-    get_n_plus(1);
-    // get_n_plus(2);
-    // get_n_plus(3);
-    // get_n_plus(4);
+    get_n(50);
+    //get_n_plus(10);
     return 0;
 }
