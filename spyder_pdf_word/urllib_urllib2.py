@@ -5,8 +5,6 @@ import urllib
 import urllib2
 
 
-
-
 class Urllib_urllib2(object):
     '''
     this is  a simple example
@@ -39,7 +37,7 @@ def main():
     headers = {}
     data = {}
     url = ""
-    print s.send_request(url, headers, data)
+    print(s.send_request(url, headers, data))
 
 
 if __name__ == "__main__":
