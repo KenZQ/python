@@ -15,16 +15,13 @@ class Urllib_urllib2(object):
 
 
     def send_request(self, url, data, headers):
-    
-
-        
-        url = url
-        data = data
-        data = urllib.urlencode(data)
-        headers = headers
-        
         ret = ""
-        req = urllib2.Request(url=url, data=data,headers=headers) 
+        if not url:
+            return ret
+        
+        data = urllib.urlencode(data)
+        
+        req = urllib2.Request(url=url, data=data, headers=headers) 
         
         try:
         
@@ -42,7 +39,7 @@ def main():
     headers = {}
     data = {}
     url = ""
-    print s.send_request()
+    print s.send_request(url, headers, data)
 
 
 if __name__ == "__main__":
