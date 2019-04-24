@@ -34,7 +34,8 @@ class Solution:
             i -= 1
             
         return False
-                    
+
+
 test_arr = [[1,4,7], [2,5,8], [3,6,9]]
 s = Solution()
 print(s.find_normal(20, test_arr))
